@@ -1,0 +1,177 @@
+{
+  "contractName": "StorageState",
+  "abi": [],
+  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3006080604052600080fd00a165627a7a7230582005134c67de5749f6415317fc136a3c77180f3c19af771d636829de30407affbe0029",
+  "deployedBytecode": "0x6080604052600080fd00a165627a7a7230582005134c67de5749f6415317fc136a3c77180f3c19af771d636829de30407affbe0029",
+  "sourceMap": "58:54:4:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;58:54:4;;;;;;;",
+  "deployedSourceMap": "58:54:4:-;;;;;",
+  "source": "pragma solidity ^0.4.18;\nimport \"./KeyValueStorage.sol\";\n\ncontract StorageState {\n  KeyValueStorage _storage; \n}",
+  "sourcePath": "/Users/jasperdegooijer/Documents/proxyTest/contracts/StorageState.sol",
+  "ast": {
+    "absolutePath": "/Users/jasperdegooijer/Documents/proxyTest/contracts/StorageState.sol",
+    "exportedSymbols": {
+      "StorageState": [
+        234
+      ]
+    },
+    "id": 235,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 230,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".18"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:4"
+      },
+      {
+        "absolutePath": "/Users/jasperdegooijer/Documents/proxyTest/contracts/KeyValueStorage.sol",
+        "file": "./KeyValueStorage.sol",
+        "id": 231,
+        "nodeType": "ImportDirective",
+        "scope": 235,
+        "sourceUnit": 161,
+        "src": "25:31:4",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 234,
+        "linearizedBaseContracts": [
+          234
+        ],
+        "name": "StorageState",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 233,
+            "name": "_storage",
+            "nodeType": "VariableDeclaration",
+            "scope": 234,
+            "src": "84:24:4",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_KeyValueStorage_$160",
+              "typeString": "contract KeyValueStorage"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 232,
+              "name": "KeyValueStorage",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 160,
+              "src": "84:15:4",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_KeyValueStorage_$160",
+                "typeString": "contract KeyValueStorage"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 235,
+        "src": "58:54:4"
+      }
+    ],
+    "src": "0:112:4"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/jasperdegooijer/Documents/proxyTest/contracts/StorageState.sol",
+    "exportedSymbols": {
+      "StorageState": [
+        234
+      ]
+    },
+    "id": 235,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 230,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".18"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:4"
+      },
+      {
+        "absolutePath": "/Users/jasperdegooijer/Documents/proxyTest/contracts/KeyValueStorage.sol",
+        "file": "./KeyValueStorage.sol",
+        "id": 231,
+        "nodeType": "ImportDirective",
+        "scope": 235,
+        "sourceUnit": 161,
+        "src": "25:31:4",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 234,
+        "linearizedBaseContracts": [
+          234
+        ],
+        "name": "StorageState",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 233,
+            "name": "_storage",
+            "nodeType": "VariableDeclaration",
+            "scope": 234,
+            "src": "84:24:4",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_KeyValueStorage_$160",
+              "typeString": "contract KeyValueStorage"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 232,
+              "name": "KeyValueStorage",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 160,
+              "src": "84:15:4",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_KeyValueStorage_$160",
+                "typeString": "contract KeyValueStorage"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 235,
+        "src": "58:54:4"
+      }
+    ],
+    "src": "0:112:4"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2018-12-18T22:03:58.547Z"
+}

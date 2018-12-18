@@ -1,0 +1,526 @@
+{
+  "contractName": "RegistryStorage",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "renounceOwnership",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "dappIds",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "isOwner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    }
+  ],
+  "bytecode": "0x6080604052336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16600073ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a361044d806100cf6000396000f30060806040526004361061006d576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063715018a61461007257806387bc3e57146100895780638da5cb5b146100ca5780638f32d59b14610121578063f2fde38b14610150575b600080fd5b34801561007e57600080fd5b50610087610193565b005b34801561009557600080fd5b506100b460048036038101908080359060200190929190505050610265565b6040518082815260200191505060405180910390f35b3480156100d657600080fd5b506100df610288565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561012d57600080fd5b506101366102b1565b604051808215151515815260200191505060405180910390f35b34801561015c57600080fd5b50610191600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610308565b005b61019b6102b1565b15156101a657600080fd5b600073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a360008060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550565b60038181548110151561027457fe5b906000526020600020016000915090505481565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614905090565b6103106102b1565b151561031b57600080fd5b61032481610327565b50565b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff161415151561036357600080fd5b8073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a3806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550505600a165627a7a72305820bf8a8a0e89a05d4f96f0051e8f2974bc49e1954062508a305549190abf39cb650029",
+  "deployedBytecode": "0x60806040526004361061006d576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063715018a61461007257806387bc3e57146100895780638da5cb5b146100ca5780638f32d59b14610121578063f2fde38b14610150575b600080fd5b34801561007e57600080fd5b50610087610193565b005b34801561009557600080fd5b506100b460048036038101908080359060200190929190505050610265565b6040518082815260200191505060405180910390f35b3480156100d657600080fd5b506100df610288565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561012d57600080fd5b506101366102b1565b604051808215151515815260200191505060405180910390f35b34801561015c57600080fd5b50610191600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610308565b005b61019b6102b1565b15156101a657600080fd5b600073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a360008060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550565b60038181548110151561027457fe5b906000526020600020016000915090505481565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614905090565b6103106102b1565b151561031b57600080fd5b61032481610327565b50565b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff161415151561036357600080fd5b8073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a3806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550505600a165627a7a72305820bf8a8a0e89a05d4f96f0051e8f2974bc49e1954062508a305549190abf39cb650029",
+  "sourceMap": "107:142:3:-;;;518:10:4;509:6;;:19;;;;;;;;;;;;;;;;;;572:6;;;;;;;;;;;539:40;;568:1;539:40;;;;;;;;;;;;107:142:3;;;;;;",
+  "deployedSourceMap": "107:142:3:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1273:127:4;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1273:127:4;;;;;;211:21:3;;8:9:-1;5:2;;;30:1;27;20:12;5:2;211:21:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;639:70:4;;8:9:-1;5:2;;;30:1;27;20:12;5:2;639:70:4;;;;;;;;;;;;;;;;;;;;;;;;;;;926:83;;8:9:-1;5:2;;;30:1;27;20:12;5:2;926:83:4;;;;;;;;;;;;;;;;;;;;;;;;;;;1561:101;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1561:101:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;1273:127;824:9;:7;:9::i;:::-;816:18;;;;;;;;1367:1;1330:40;;1351:6;;;;;;;;;;;1330:40;;;;;;;;;;;;1393:1;1376:6;;:19;;;;;;;;;;;;;;;;;;1273:127::o;211:21:3:-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;639:70:4:-;676:7;698:6;;;;;;;;;;;691:13;;639:70;:::o;926:83::-;965:4;998:6;;;;;;;;;;;984:20;;:10;:20;;;977:27;;926:83;:::o;1561:101::-;824:9;:7;:9::i;:::-;816:18;;;;;;;;1629:28;1648:8;1629:18;:28::i;:::-;1561:101;:::o;1796:169::-;1885:1;1865:22;;:8;:22;;;;1857:31;;;;;;;;1928:8;1899:38;;1920:6;;;;;;;;;;;1899:38;;;;;;;;;;;;1952:8;1943:6;;:17;;;;;;;;;;;;;;;;;;1796:169;:::o",
+  "source": "pragma solidity ^0.4.24;\n\nimport \"../node_modules/openzeppelin-solidity/contracts/ownership/Ownable.sol\";\n\ncontract RegistryStorage is Ownable{\n  mapping(uint => string) idToDapp;\n  \n  address implementation;\n  uint[] public dappIds;\n  uint nonce;\n}",
+  "sourcePath": "/Users/jasperdegooijer/Documents/proxyTest/contracts/RegistryStorage.sol",
+  "ast": {
+    "absolutePath": "/Users/jasperdegooijer/Documents/proxyTest/contracts/RegistryStorage.sol",
+    "exportedSymbols": {
+      "RegistryStorage": [
+        170
+      ]
+    },
+    "id": 171,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 155,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:3"
+      },
+      {
+        "absolutePath": "/Users/jasperdegooijer/Documents/proxyTest/node_modules/openzeppelin-solidity/contracts/ownership/Ownable.sol",
+        "file": "../node_modules/openzeppelin-solidity/contracts/ownership/Ownable.sol",
+        "id": 156,
+        "nodeType": "ImportDirective",
+        "scope": 171,
+        "sourceUnit": 280,
+        "src": "26:79:3",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 157,
+              "name": "Ownable",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 279,
+              "src": "135:7:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Ownable_$279",
+                "typeString": "contract Ownable"
+              }
+            },
+            "id": 158,
+            "nodeType": "InheritanceSpecifier",
+            "src": "135:7:3"
+          }
+        ],
+        "contractDependencies": [
+          279
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 170,
+        "linearizedBaseContracts": [
+          170,
+          279
+        ],
+        "name": "RegistryStorage",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 162,
+            "name": "idToDapp",
+            "nodeType": "VariableDeclaration",
+            "scope": 170,
+            "src": "146:32:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_string_storage_$",
+              "typeString": "mapping(uint256 => string)"
+            },
+            "typeName": {
+              "id": 161,
+              "keyType": {
+                "id": 159,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "154:4:3",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "146:23:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_string_storage_$",
+                "typeString": "mapping(uint256 => string)"
+              },
+              "valueType": {
+                "id": 160,
+                "name": "string",
+                "nodeType": "ElementaryTypeName",
+                "src": "162:6:3",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 164,
+            "name": "implementation",
+            "nodeType": "VariableDeclaration",
+            "scope": 170,
+            "src": "185:22:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 163,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "185:7:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 167,
+            "name": "dappIds",
+            "nodeType": "VariableDeclaration",
+            "scope": 170,
+            "src": "211:21:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_uint256_$dyn_storage",
+              "typeString": "uint256[]"
+            },
+            "typeName": {
+              "baseType": {
+                "id": 165,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "211:4:3",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "id": 166,
+              "length": null,
+              "nodeType": "ArrayTypeName",
+              "src": "211:6:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                "typeString": "uint256[]"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 169,
+            "name": "nonce",
+            "nodeType": "VariableDeclaration",
+            "scope": 170,
+            "src": "236:10:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 168,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "236:4:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 171,
+        "src": "107:142:3"
+      }
+    ],
+    "src": "0:249:3"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/jasperdegooijer/Documents/proxyTest/contracts/RegistryStorage.sol",
+    "exportedSymbols": {
+      "RegistryStorage": [
+        170
+      ]
+    },
+    "id": 171,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 155,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:3"
+      },
+      {
+        "absolutePath": "/Users/jasperdegooijer/Documents/proxyTest/node_modules/openzeppelin-solidity/contracts/ownership/Ownable.sol",
+        "file": "../node_modules/openzeppelin-solidity/contracts/ownership/Ownable.sol",
+        "id": 156,
+        "nodeType": "ImportDirective",
+        "scope": 171,
+        "sourceUnit": 280,
+        "src": "26:79:3",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 157,
+              "name": "Ownable",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 279,
+              "src": "135:7:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Ownable_$279",
+                "typeString": "contract Ownable"
+              }
+            },
+            "id": 158,
+            "nodeType": "InheritanceSpecifier",
+            "src": "135:7:3"
+          }
+        ],
+        "contractDependencies": [
+          279
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 170,
+        "linearizedBaseContracts": [
+          170,
+          279
+        ],
+        "name": "RegistryStorage",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 162,
+            "name": "idToDapp",
+            "nodeType": "VariableDeclaration",
+            "scope": 170,
+            "src": "146:32:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_string_storage_$",
+              "typeString": "mapping(uint256 => string)"
+            },
+            "typeName": {
+              "id": 161,
+              "keyType": {
+                "id": 159,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "154:4:3",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "146:23:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_string_storage_$",
+                "typeString": "mapping(uint256 => string)"
+              },
+              "valueType": {
+                "id": 160,
+                "name": "string",
+                "nodeType": "ElementaryTypeName",
+                "src": "162:6:3",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 164,
+            "name": "implementation",
+            "nodeType": "VariableDeclaration",
+            "scope": 170,
+            "src": "185:22:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 163,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "185:7:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 167,
+            "name": "dappIds",
+            "nodeType": "VariableDeclaration",
+            "scope": 170,
+            "src": "211:21:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_uint256_$dyn_storage",
+              "typeString": "uint256[]"
+            },
+            "typeName": {
+              "baseType": {
+                "id": 165,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "211:4:3",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "id": 166,
+              "length": null,
+              "nodeType": "ArrayTypeName",
+              "src": "211:6:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                "typeString": "uint256[]"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 169,
+            "name": "nonce",
+            "nodeType": "VariableDeclaration",
+            "scope": 170,
+            "src": "236:10:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 168,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "236:4:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 171,
+        "src": "107:142:3"
+      }
+    ],
+    "src": "0:249:3"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0xb7b121c3656f2175ce7ddef8867c9a354651a1e8",
+      "transactionHash": "0xa06b73a01241b4d9f8ccee8f00b485537418e5dca9afffd13dd817743d612a41"
+    }
+  },
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2018-12-18T15:04:01.889Z"
+}
